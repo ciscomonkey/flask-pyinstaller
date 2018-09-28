@@ -44,6 +44,7 @@ Traceback (most recent call last):
   File "site-packages/flask/templating.py", line 86, in _get_source_fast
 jinja2.exceptions.TemplateNotFound: hello.html
 ```
+Don't run it as ```./build/normal_flaskapp``` as this puts the templates folder in the relativie path where Flask expects to see them. When you distribute your standalone executable, those folders won't be there and you'll see the error from above.
 
 # How to fix?
 
