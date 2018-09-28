@@ -1,5 +1,6 @@
 # flask-pyinstaller
-Create standalone flask app using pyinstaller
+
+Just my notes on creating standalone flask app using pyinstaller for some projects I am working on.
 
 # Setup
 
@@ -72,7 +73,7 @@ else:
 Now when we run:
 
 ```shell
-$ ./single_flaskapp
+~/dev/cflask/dist$ ./single_flaskapp
  * Serving Flask app "single_flaskapp" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
