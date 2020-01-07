@@ -25,5 +25,6 @@ def hello_world(name=None):
     return render_template('hello.html', name=name)
 
 
-Timer(1, open_browser).start()
-app.run()
+if __name__ == "__main__":
+    Timer(1, open_browser).start()
+    app.run()
