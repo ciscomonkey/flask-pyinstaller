@@ -50,7 +50,7 @@ Don't run it as ```./build/normal_flaskapp``` as this puts the templates folder 
 # How to fix?
 
 The problem is that when the site is running in packaged form, the templates are inside
-a directory called _MEIxxxxxx under the temp directory (see https://pythonhosted.org/PyInstaller/runtime-information.html#using-file-and-sys-meipass) and you have to tell Flask about this.
+a directory called _MEIxxxxxx under the temp directory (see https://pyinstaller.readthedocs.io/en/stable/runtime-information.html#using-file) and you have to tell Flask about this.
 
 To do this use the template_folder argument (see http://flask.pocoo.org/docs/1.0/api/#application-object).
 
