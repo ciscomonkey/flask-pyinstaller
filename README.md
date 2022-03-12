@@ -71,6 +71,12 @@ else:
     app = Flask(__name__)
 ```
 
+Then we just build the app for the ```single_flaskapp.py``` with the command:  
+```shell
+$ pyinstaller --onefile --add-data 'templates:templates' --add-data 'static:static' single_flaskapp.py
+```
+
+
 Now when we run:
 
 ```shell
